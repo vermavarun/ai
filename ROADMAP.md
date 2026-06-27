@@ -20,6 +20,7 @@
 14. [Pro Tips for Success](#14-pro-tips-for-success)
 15. [Progress Tracking](#15-progress-tracking)
 16. [Certification Path (Optional)](#16-certification-path-optional)
+17. [Interview-Critical 2026 Add-On Topics](#17-interview-critical-2026-add-on-topics)
 
 ---
 
@@ -418,6 +419,11 @@
   - [ ] 5.3.6.6 BM25 and lexical search
 - [ ] 5.3.7 In-context learning
 - [ ] 5.3.8 Emergent abilities and scaling laws
+- [ ] 5.3.9 Test-time compute and inference-time scaling
+- [ ] 5.3.10 Reasoning models and long-chain deliberation patterns
+- [ ] 5.3.11 Toolformer-style training and API/tool-native models
+- [ ] 5.3.12 Model Context Protocol (MCP) and tool interoperability
+- [ ] 5.3.13 Structured generation (JSON schema, constrained decoding)
 
 ### 5.4 Working with Popular LLMs
 - [ ] 5.4.1 OpenAI API (GPT-3.5, GPT-4)
@@ -472,6 +478,11 @@
 - [ ] 5.6.10 Speculative decoding
 - [ ] 5.6.11 Flash Attention and efficient attention mechanisms
 - [ ] 5.6.12 Long context handling (ALiBi, Rotary embeddings)
+- [ ] 5.6.13 Process supervision and outcome supervision
+- [ ] 5.6.14 Verifier models and self-correction loops
+- [ ] 5.6.15 Constitutional prompting and policy-grounded generation
+- [ ] 5.6.16 LLM memory architectures (episodic, semantic, vector, graph)
+- [ ] 5.6.17 Hallucination-aware decoding and abstention strategies
 
 ---
 
@@ -719,6 +730,10 @@
 - [ ] 8.4.8 Blue-green deployment
 - [ ] 8.4.9 Performance monitoring (Prometheus, Grafana)
 - [ ] 8.4.10 Cost optimization and benchmarking
+- [ ] 8.4.11 LLM tracing and span-level observability (prompt, retrieval, tool calls)
+- [ ] 8.4.12 Online quality monitoring (groundedness and answer quality)
+- [ ] 8.4.13 EvalOps pipelines (scheduled evals + regression gates in CI/CD)
+- [ ] 8.4.14 Incident triage for AI systems (prompt/version/model rollback playbooks)
 
 ### 8.5 Optimization & Scaling
 - [ ] 8.5.1 Model compression
@@ -783,6 +798,11 @@
 - [ ] 9.2.8 Brain-Computer Interfaces
 - [ ] 9.2.9 Causal inference in ML
 - [ ] 9.2.10 Meta-learning and few-shot learning
+- [ ] 9.2.11 Small language models (SLMs) for edge and private deployment
+- [ ] 9.2.12 Test-time adaptation and online learning agents
+- [ ] 9.2.13 World models and planning-centric AI systems
+- [ ] 9.2.14 Generative recommender systems
+- [ ] 9.2.15 AI-native databases and retrieval engines
 
 ### 9.3 Research Skills
 - [ ] 9.3.1 Reading research papers effectively
@@ -1049,6 +1069,146 @@
 
 ---
 
+## 17. Interview-Critical 2026 Add-On Topics
+*Duration: Parallel track across all phases*
+
+### 17.1 LLM Systems Design (Must for Senior Interviews)
+- [ ] 17.1.1 End-to-end LLM system design (ingestion -> retrieval -> generation -> evaluation)
+- [ ] 17.1.2 Context engineering and context window budgeting
+- [ ] 17.1.3 RAG architecture trade-offs (latency, quality, cost, freshness)
+- [ ] 17.1.4 Agentic workflows (planner-executor, tool-calling, memory management)
+- [ ] 17.1.5 Multi-agent coordination patterns and failure modes
+- [ ] 17.1.6 Production prompt management (versioning, rollback, A/B tests)
+- [ ] 17.1.7 Guardrails and policy enforcement in agent pipelines
+
+### 17.2 Retrieval, Knowledge, and Search at Scale
+- [ ] 17.2.1 Dense vs sparse retrieval and hybrid retrieval architectures
+- [ ] 17.2.2 Re-ranking pipelines (cross-encoders, late interaction)
+- [ ] 17.2.3 Query rewriting, decomposition, and self-query retrieval
+- [ ] 17.2.4 Chunking strategies (semantic, fixed, hierarchical)
+- [ ] 17.2.5 Metadata filtering and access-control-aware retrieval (multi-tenant)
+- [ ] 17.2.6 Knowledge graph + vector retrieval combinations
+- [ ] 17.2.7 Evaluation of retrieval quality (recall@k, nDCG, MRR)
+
+### 17.3 Inference and Serving Optimization
+- [ ] 17.3.1 KV cache internals and cache-aware serving
+- [ ] 17.3.2 Continuous batching and dynamic batching
+- [ ] 17.3.3 Speculative decoding and lookahead decoding
+- [ ] 17.3.4 Prefix caching and prompt caching strategies
+- [ ] 17.3.5 Quantization beyond INT8 (INT4, FP8, AWQ, GPTQ)
+- [ ] 17.3.6 Throughput-latency-cost optimization under SLOs
+- [ ] 17.3.7 Serving engines (vLLM, TensorRT-LLM, TGI, SGLang) comparison
+
+### 17.4 Post-Training and Alignment
+- [ ] 17.4.1 Supervised fine-tuning data curation and quality control
+- [ ] 17.4.2 Preference tuning (DPO, ORPO, SimPO)
+- [ ] 17.4.3 Reinforcement learning for reasoning-heavy tasks
+- [ ] 17.4.4 Reward modeling pitfalls and reward hacking
+- [ ] 17.4.5 Synthetic data generation and filtering loops
+- [ ] 17.4.6 Distillation from frontier models to smaller deployable models
+- [ ] 17.4.7 Safety-aligned fine-tuning and red-team feedback loops
+
+### 17.5 Evaluation and Reliability Engineering
+- [ ] 17.5.1 Offline evals vs online evals (when each fails)
+- [ ] 17.5.2 LLM-as-a-judge limitations and calibration techniques
+- [ ] 17.5.3 Task-specific eval sets and adversarial test design
+- [ ] 17.5.4 Groundedness, factuality, and citation verification metrics
+- [ ] 17.5.5 Agent benchmarking (success rate, tool efficiency, recovery rate)
+- [ ] 17.5.6 Regression testing for prompts, models, and retrieval changes
+- [ ] 17.5.7 Incident response playbooks for model behavior regressions
+
+### 17.6 Advanced Multimodal and Reasoning Models
+- [ ] 17.6.1 Vision-language model adaptation and instruction tuning
+- [ ] 17.6.2 Document intelligence pipelines (OCR + layout + reasoning)
+- [ ] 17.6.3 Audio-language models and speech-native assistants
+- [ ] 17.6.4 Video-language understanding and temporal retrieval
+- [ ] 17.6.5 Long-context reasoning strategies and memory compression
+- [ ] 17.6.6 Tool-augmented reasoning and verifier models
+- [ ] 17.6.7 Model routing across specialist models (MoE and orchestration)
+
+### 17.7 Data and Platform Engineering for AI
+- [ ] 17.7.1 Data contracts and schema evolution for ML/LLM pipelines
+- [ ] 17.7.2 Feature + embedding stores in unified architectures
+- [ ] 17.7.3 Streaming pipelines for near-real-time AI systems
+- [ ] 17.7.4 GPU scheduling and bin-packing for inference fleets
+- [ ] 17.7.5 Cost observability per request, per tenant, per feature
+- [ ] 17.7.6 Secure secret management and key rotation in AI services
+- [ ] 17.7.7 Governance: model registry, model cards, and audit trails
+
+### 17.8 Security, Privacy, and Responsible AI (Interview Hot Area)
+- [ ] 17.8.1 Prompt injection, data exfiltration, and jailbreak defense patterns
+- [ ] 17.8.2 Supply-chain risks in model and dataset dependencies
+- [ ] 17.8.3 PII detection, redaction, and retention policies for AI logs
+- [ ] 17.8.4 Differential privacy and secure fine-tuning workflows
+- [ ] 17.8.5 Policy-as-code for model serving and tool usage control
+- [ ] 17.8.6 Legal/compliance basics (GDPR, SOC 2, HIPAA-aware AI design)
+- [ ] 17.8.7 Human-in-the-loop controls for high-risk decision systems
+
+### 17.9 Tough Interview Preparation Strategy
+- [ ] 17.9.1 Build 3 system design case studies (RAG, agents, multimodal)
+- [ ] 17.9.2 Prepare 10 architecture trade-off stories with metrics
+- [ ] 17.9.3 Practice whiteboard derivations (attention, backprop, optimization)
+- [ ] 17.9.4 Solve 30 applied ML debugging scenarios
+- [ ] 17.9.5 Build a latency-budget calculator for one production AI service
+- [ ] 17.9.6 Create a personal failure postmortem portfolio (what broke and why)
+- [ ] 17.9.7 Weekly mock interviews (coding + ML + system design + behavior)
+
+### 17.10 Agent Engineering and Tooling Depth
+- [ ] 17.10.1 Deterministic vs autonomous agent design trade-offs
+- [ ] 17.10.2 Planning strategies (ReAct, plan-and-execute, graph planners)
+- [ ] 17.10.3 Tool selection policies and fallback orchestration
+- [ ] 17.10.4 Memory compaction, pruning, and retention boundaries
+- [ ] 17.10.5 Multi-step tool transaction safety and idempotency
+- [ ] 17.10.6 Human approval checkpoints for high-impact actions
+- [ ] 17.10.7 Agent cost shaping with dynamic model routing
+
+### 17.11 Production RAG Architecture (Deep Dive)
+- [ ] 17.11.1 Ingestion SLAs, freshness windows, and re-index strategies
+- [ ] 17.11.2 Parsing quality for PDFs, tables, code, and scanned docs
+- [ ] 17.11.3 Parent-child chunking and hierarchical retrieval
+- [ ] 17.11.4 Query-time fusion (semantic, keyword, metadata, graph)
+- [ ] 17.11.5 Re-ranker selection and latency-aware cascade design
+- [ ] 17.11.6 Citation fidelity checks and source attribution guarantees
+- [ ] 17.11.7 Tenant isolation and ACL-aware retrieval enforcement
+
+### 17.12 Advanced Inference Systems and GPU Economics
+- [ ] 17.12.1 KV cache eviction policies and memory fragmentation trade-offs
+- [ ] 17.12.2 Prefix sharing, prompt deduplication, and response caching
+- [ ] 17.12.3 Autoscaling policies for bursty LLM traffic
+- [ ] 17.12.4 Queueing theory for tail latency (P95/P99) control
+- [ ] 17.12.5 Admission control and graceful degradation strategies
+- [ ] 17.12.6 Multi-model serving topology (hot/warm/cold pools)
+- [ ] 17.12.7 Cost-per-token and cost-per-task optimization frameworks
+
+### 17.13 Data, Evaluation, and Experimentation Rigor
+- [ ] 17.13.1 Golden datasets, shadow datasets, and synthetic eval sets
+- [ ] 17.13.2 Counterfactual and adversarial test generation
+- [ ] 17.13.3 Inter-annotator agreement and label quality governance
+- [ ] 17.13.4 Experiment design with guardrail metrics and stopping rules
+- [ ] 17.13.5 Prompt/model/retrieval factorized A/B testing
+- [ ] 17.13.6 Causal impact measurement for AI feature launches
+- [ ] 17.13.7 Post-deployment drift root-cause analysis workflows
+
+### 17.14 Enterprise AI Architecture and Governance
+- [ ] 17.14.1 Multi-tenant AI platform design and quota management
+- [ ] 17.14.2 Policy engines for model and tool authorization
+- [ ] 17.14.3 Compliance-by-design for regulated AI workloads
+- [ ] 17.14.4 Data residency, sovereignty, and cross-region constraints
+- [ ] 17.14.5 Vendor lock-in mitigation and portability architecture
+- [ ] 17.14.6 Secure SDLC for AI systems (model, prompt, and data artifacts)
+- [ ] 17.14.7 AI architecture review templates for interview storytelling
+
+### 17.15 Interview Execution for Top-Tier Roles
+- [ ] 17.15.1 90-second architecture pitch framework
+- [ ] 17.15.2 Trade-off articulation using latency-quality-cost triangle
+- [ ] 17.15.3 Failure-mode-first answering strategy
+- [ ] 17.15.4 Whiteboard-first decomposition for ambiguous AI problems
+- [ ] 17.15.5 Metric-driven storytelling with before/after impact
+- [ ] 17.15.6 Leadership signals: mentoring, standards, and incident ownership
+- [ ] 17.15.7 Behavioral narratives mapped to staff-level competencies
+
+---
+
 **Remember**: Becoming a world-class AI Engineer is a marathon, not a sprint. Stay consistent, stay curious, and keep building! 🚀
 
-*Last Updated: May 26, 2026*
+*Last Updated: June 28, 2026 (Interview track expanded)*
