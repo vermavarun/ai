@@ -734,6 +734,13 @@
 - [ ] 8.4.12 Online quality monitoring (groundedness and answer quality)
 - [ ] 8.4.13 EvalOps pipelines (scheduled evals + regression gates in CI/CD)
 - [ ] 8.4.14 Incident triage for AI systems (prompt/version/model rollback playbooks)
+- [ ] 8.4.15 Evaluation dataset lifecycle (golden, holdout, shadow, and production-sampled sets)
+- [ ] 8.4.16 Task-specific metrics and rubric design (quality, safety, latency, cost, and abstention)
+- [ ] 8.4.17 Evaluator validation (human agreement, judge bias, calibration, and inter-rater review)
+- [ ] 8.4.18 Component and end-to-end evals for retrieval, generation, tools, and full workflows
+- [ ] 8.4.19 Online experimentation (A/B tests, shadow traffic, canaries, and sequential monitoring)
+- [ ] 8.4.20 Tracing and evaluation tooling (OpenTelemetry, MLflow, Langfuse, Phoenix, or equivalent)
+- [ ] 8.4.21 Privacy-aware evaluation data governance, retention, and access controls
 
 ### 8.5 Optimization & Scaling
 - [ ] 8.5.1 Model compression
@@ -1207,8 +1214,34 @@
 - [ ] 17.15.6 Leadership signals: mentoring, standards, and incident ownership
 - [ ] 17.15.7 Behavioral narratives mapped to staff-level competencies
 
+### 17.16 Evaluation Engineering and Evals-Driven Development
+- [ ] 17.16.1 Translate product requirements into measurable task-level success criteria
+- [ ] 17.16.2 Build versioned, representative datasets with provenance, slices, and leakage checks
+- [ ] 17.16.3 Separate development, validation, regression, adversarial, and locked test sets
+- [ ] 17.16.4 Combine deterministic checks, reference-based metrics, human review, and model judges
+- [ ] 17.16.5 Validate judge reliability with blinded human comparisons, calibration, and bias analysis
+- [ ] 17.16.6 Evaluate RAG stages independently (parsing, retrieval, reranking, grounding, citations)
+- [ ] 17.16.7 Evaluate agents by task completion, policy compliance, tool correctness, recovery, and cost
+- [ ] 17.16.8 Test multimodal systems across modality-specific quality, alignment, and safety dimensions
+- [ ] 17.16.9 Run paired experiments with confidence intervals, guardrails, and predeclared stopping rules
+- [ ] 17.16.10 Gate releases on regression thresholds and critical slices; define rollback criteria in advance
+- [ ] 17.16.11 Monitor production quality with privacy-preserving sampling, drift signals, and user feedback
+- [ ] 17.16.12 Track eval coverage and known blind spots; never treat a single aggregate score as proof
+
+### 17.17 Current AI Systems Engineering
+- [ ] 17.17.1 Context engineering (selection, ordering, compression, provenance, and token budgeting)
+- [ ] 17.17.2 Interoperable tool and context interfaces (MCP), with explicit trust boundaries and approvals
+- [ ] 17.17.3 Durable workflow orchestration for long-running, retryable, human-supervised AI tasks
+- [ ] 17.17.4 Structured outputs and constrained decoding with schema validation and safe fallbacks
+- [ ] 17.17.5 Inference serving trade-offs (continuous batching, prefix caching, prefill/decode separation)
+- [ ] 17.17.6 Model routing and fallback policies based on task quality, latency, privacy, and cost
+- [ ] 17.17.7 Open-weight model selection, licensing, artifact provenance, and reproducible deployment
+- [ ] 17.17.8 Multimodal data pipelines for audio/video (timestamps, chunking, alignment, and retrieval)
+- [ ] 17.17.9 Resilient AI workflows (idempotency, bounded retries, timeouts, budgets, and human escalation)
+- [ ] 17.17.10 Threat modeling for prompt injection, poisoned data, tool abuse, and supply-chain compromise
+
 ---
 
 **Remember**: Becoming a world-class AI Engineer is a marathon, not a sprint. Stay consistent, stay curious, and keep building! 🚀
 
-*Last Updated: June 28, 2026 (Interview track expanded)*
+*Last Updated: October 27, 2026 (Evaluation engineering and AI systems topics expanded)*
